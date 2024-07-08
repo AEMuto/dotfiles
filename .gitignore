@@ -1,0 +1,25 @@
+# We don't want that on the internetz! 🙈
+dbcli/.config/pgcli/log
+dbcli/.config/mycli/log
+gpg/.local/share/gpg/crls.d/
+gpg/.local/share/gpg/private-keys-v1.d/
+gpg/.local/share/gpg/tofu.db
+gpg/.local/share/gpg/pubring.kbx
+gpg/.local/share/gpg/pubring.kbx~
+gpg/.local/share/gpg/trustdb.gpg
+gpg/.local/share/gpg/.*.*
+ssh/.ssh/authorized_keys
+ssh/.ssh/id_*
+ssh/.ssh/*.pub
+ssh/.ssh/known_hosts
+tmux/.config/tmux/plugins/
+vim/.config/nvim/*/
+zsh/.zcompdump
+zsh/.config/zsh/*secret*.zsh
+fonts
+.dotfiles.wsl
+ssh/.ssh/nicolas_perso.pubZone.Identifier
+gpg/.local/share/gpg/openpgp-revocs.d/*
+ssh/.ssh/config
+ssh/.ssh/known_hosts.old
+zsh/.config/zsh/.zcompdump
