@@ -38,7 +38,7 @@ function n() {
   }
   # Last visited directory
   export NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
-  command nnn -radHUBT V $@
+  command nnn -radHUB $@
 
   [ ! -f "$NNN_TMPFILE" ] || {
       . "$NNN_TMPFILE"
