@@ -1,0 +1,43 @@
+#!/bin/bash
+
+# Function to reduce PDF size
+reduce_pdf() {
+    input_pdf="$1"
+    output_pdf="${input_pdf%.pdf}_compressed.pdf"
+    gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile="$output_pdf" "$input_pdf"
+    if [ $? -eq 0 ]; then
+        echo "Compressed: $input_pdf -> $output_pdf"
+    else
+        echo "Failed to compress: $input_pdf"
+    fi
+}
+
+# Function to process a directory
+process_directory() {
+    input_dir="$1"
+    find "$input_dir" -type f -name "*.pdf" | while read -r pdf; do
+        reduce_pdf "$pdf"
+    done
+}
+
+# Check if the correct number of arguments is provided
+if [ $# -ne 1 ]; then
+    echo "Usage: pdfreduce <input.pdf> or pdfreduce <inputdir>"
+    exit 1
+fi
+
+# Check if input is a file or a directory
+input="$1"
+if [ -f "$input" ]; then
+    if [[ "$input" == *.pdf ]]; then
+        reduce_pdf "$input"
+    else
+        echo "Error: The file provided is not a PDF."
+        exit 1
+    fi
+elif [ -d "$input" ]; then
+    process_directory "$input"
+else
+    echo "Error: The input is neither a file nor a directory."
+    exit 1
+fi
