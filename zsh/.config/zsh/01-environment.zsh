@@ -18,7 +18,7 @@ export FZF_DEFAULT_OPTS=" \
 --color=marker:#f4dbd6,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796"
 
 # NNN
-export NNN_PLUG='p:preview-tui;v:imgview;'
+export NNN_PLUG='p:preview-tui;v:imgview;m:cmusq;s:suedit;o:organize;'
 export NNN_BMS="e:/run/media/monpancak/WD_BLACK;d:~/Downloads;D:~/Documents;m:~/Music;p:~/Pictures;v:~/Videos;c:~/Code;g:~/Google Drive;n:/mnt/exfat;h:$HOME;.:~/.config"
 # This second option relies on you're terminal using the catppuccin theme and well use true catppuccin colors:
 BLK="03" CHR="03" DIR="04" EXE="02" REG="07" HARDLINK="05" SYMLINK="05" MISSING="08" ORPHAN="01" FIFO="06" SOCK="03" UNKNOWN="01"
