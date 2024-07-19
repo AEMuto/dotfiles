@@ -20,7 +20,7 @@ alias "cd.."="cd ../"
 alias rmrf="rm -rf"
 alias psef="ps -ef"
 alias ZZ="exit"
-alias chitu="chitubox-basic platform xcb"
+alias chitu="chitubox-basic -platform xcb"
 
 #git
 alias ga="git add"
