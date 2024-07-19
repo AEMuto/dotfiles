@@ -1,3 +1,6 @@
+# Created by `pipx` on 2024-07-19 09:40:23
+export PATH="$PATH:/home/monpancak/.local/bin"
+
 # home
 export XDG_CONFIG_HOME="$HOME"/.config
 export XDG_DATA_HOME="$HOME"/.local/share
@@ -15,7 +18,7 @@ export FZF_DEFAULT_OPTS=" \
 --color=marker:#f4dbd6,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796"
 
 # NNN
-export NNN_PLUG='p:preview-tui'
+export NNN_PLUG='p:preview-tui;v:imgview;'
 export NNN_BMS="e:/run/media/monpancak/WD_BLACK;d:~/Downloads;D:~/Documents;m:~/Music;p:~/Pictures;v:~/Videos;c:~/Code;g:~/Google Drive;n:/mnt/exfat;h:$HOME;.:~/.config"
 # This second option relies on you're terminal using the catppuccin theme and well use true catppuccin colors:
 BLK="03" CHR="03" DIR="04" EXE="02" REG="07" HARDLINK="05" SYMLINK="05" MISSING="08" ORPHAN="01" FIFO="06" SOCK="03" UNKNOWN="01"
@@ -48,10 +51,6 @@ export FONTPREVIEW_FG_COLOR="#EED49F"
 # preferred text editor
 # export EDITOR=nvim
 # export VISUAL=nvim
-
-# fzf & clipboard menu
-# export CM_LAUNCHER="fzf"
-# export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS' --color=fg:#c1c1c1,bg:#2b2b2b,hl:#78824B --color=fg+:#ffffff,bg+:#1c1c1c,hl+:#C9A554 --color=info:#5f875f,prompt:#5f875f,pointer:#78824B --color=marker:#78824B,spinner:#78824B,header:#78824B --color=gutter:#2b2b2b,border:#222222 --padding=1 --prompt=❯ --marker=❯ --pointer=❯ --reverse'
 
 # language
 # export LC_COLLATE=en_US.UTF-8

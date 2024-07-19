@@ -3,6 +3,8 @@ source ~/.config/zsh/themes/powerlevel10k/powerlevel10k.zsh-theme
 source ~/.config/zsh/themes/.p10k.zsh
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
+# rbenv
+eval "$(rbenv init - zsh)"
 # Plugins
 ## zsh-nvm
 export NVM_COMPLETION=true
