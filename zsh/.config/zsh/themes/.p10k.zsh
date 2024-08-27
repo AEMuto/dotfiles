@@ -108,7 +108,7 @@
     status                  # exit code of the last command
     command_execution_time  # duration of the last command
     ip                    # ip address and bandwidth usage for a specified network interface
-    public_ip             # public IP address
+    # public_ip             # public IP address
     vpn_ip                # virtual private network indicator
     nordvpn                 # nordvpn connection status, linux only (https://nordvpn.com/)
     proxy                 # system-wide http/https/ftp proxy
