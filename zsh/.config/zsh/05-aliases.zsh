@@ -1,5 +1,5 @@
 # aliases
-alias hx="helix"
+[ -f /usr/bin/helix ] && alias hx="helix"
 alias c="clear"
 alias ll="ls -lahF --color=always"
 # alias e="$EDITOR"
